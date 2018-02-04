@@ -3,15 +3,15 @@ import hw.wrangling.WranglingLike
 
 object Wrangling extends WranglingLike {
 
-  val data: List[Json] = Json.fromFile("yelp.json")
+  val data: List[Json] = JsonHelper.fromFile("yelp.json")
 
   def key(json: Json, key: String): Option[Json] = ???
 
   def fromState(data: List[Json], state: String): List[Json] = ???
 
-  def ratingLT(data: List[Json], rating: Int): List[Json] = ???
+  def ratingLT(data: List[Json], rating: Double): List[Json] = ???
 
-  def ratingGT(data: List[Json], rating: Int): List[Json] = ???
+  def ratingGT(data: List[Json], rating: Double): List[Json] = ???
 
   def category(data: List[Json], category: String): List[Json] = ???
 
