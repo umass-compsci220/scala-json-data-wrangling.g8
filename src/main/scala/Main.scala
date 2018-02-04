@@ -23,8 +23,4 @@ object Wrangling extends WranglingLike {
 
   def hasAmbience(data: List[Json], ambience: String): List[Json] = ???
 
-  def main(args: Array[String]) = {
-    println(data.head)
-  }
-
 }
